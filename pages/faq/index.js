@@ -1,5 +1,6 @@
 import Link from "next/link";
 import {useEffect, useState} from "react";
+import Head from "next/head";
 
 export async function getStaticProps() {
     const FAQ_API_URL = 'https://gist.githubusercontent.com/omariosouto/0ceab54bdd8182cbd1a4549d32945c1a/raw/578ad1e8e5296fa048e3e7ff6b317f7497b31ad9/alura-cases-faq.json'
@@ -25,6 +26,9 @@ export default function FAQPage({faq}) {
 
     return (
         <div>
+            <Head>
+                <title>FAQ - Alura Cases Campanha</title>
+            </Head>
             <h1>Alura Cases - Página de Perguntas FAQ</h1>
             <Link href='/'>
                 Ir para Home

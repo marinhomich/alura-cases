@@ -153,8 +153,6 @@ export function Icon({ as, styleSheet, ...props }) {
     } = styleSheet;
     const styleSheetUpdated = restStyleSheet;
 
-    console.log('iconVariant', iconVariant);
-
     return (
         <Box
             as={FontAwesomeIcon}
